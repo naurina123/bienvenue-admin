@@ -12,7 +12,7 @@
          <!-- Page-Title -->
          <div class="row">
             <div class="col-sm-12">
-               <div class="page-title-box">
+               <div class="page-title-box"> 
                   <div class="row">
                      <div class="col">
                         <h4 class="page-title">Add Advertising</h4>
