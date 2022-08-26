@@ -30,9 +30,9 @@
                             <li class="nav-item"><a class="nav-link" href="product.php"><i class="ti-control-record"></i>Product</a></li>
                             <li class="nav-item"><a class="nav-link" href="package.php"><i class="ti-control-record"></i>Package</a></li> 
                             <li class="nav-item"><a class="nav-link" href="advertising.php"><i class="ti-control-record"></i>Advertising</a></li> 
-                            <!-- <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>Add Ons</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>Category Customization</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>General Terms and Conditions</a></li>  -->
+                           <!-- <li class="nav-item"><a class="nav-link" href="merchantform.php"><i class="ti-control-record"></i>Merchant Form</a></li>  -->
+                             <li class="nav-item"><a class="nav-link" href="addmerchant.php"><i class="ti-control-record"></i>Add Merchant</a></li> 
+                            <!-- <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>General Terms and Conditions</a></li>  -->
                         </ul>
                     </li>
                     <!-- <li class="nav-item"><a class="nav-link" href="advertising.php">

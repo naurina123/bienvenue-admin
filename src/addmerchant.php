@@ -2,6 +2,23 @@
 <!-- Left Sidenav -->
 <?php include('includes/sidebar.php'); ?>
 <!-- end left-sidenav-->
+<style>
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .hide-srollbar {
+              overflow-y: scroll !important;
+              height: 25rem !important;
+            }
+            .hide-srollbar::-webkit-scrollbar {
+            display: none !important;
+           
+             
+            }
+
+            /* Hide scrollbar for IE and Edge */
+            .hide-srollbar {
+            -ms-overflow-style: none !important;
+            }
+        </style>
 <div class="page-wrapper">
    <!-- Top Bar Start -->
    <?php include('includes/topbar.php'); ?>
@@ -26,6 +43,7 @@
                   <form
                     id="form-horizontal"
                     class="form-horizontal form-wizard-wrapper"
+                    
                   >
                     <h3>Business Registration</h3>
                     <fieldset>
@@ -323,138 +341,307 @@
                     <!--end fieldset-->
 
                     <h3>Create </h3>
+                    
                     <fieldset>
-                       <div class="row">
-                            <div class="col-md-6">
-                            <div class="form-group mb-0 row">
-                                                <label class="col-md-3 my-1 control-label">Create Coupons</label>
-                                                <div class="col-md-9">
-                                                    <div class="form-check-inline my-1">
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio7">Custom</label>
+                      <div class="">
+                        <div class="row">
+                          <div class="col-md-6 card">
+                          
+                          <div class="card-header">
+                                        <h4 class="card-title">Create Coupons</h4>
+                                        
+                                    </div><!--end card-header-->
+
+                              <div class="form-group mb-4 mt-5 row">
+                                <label class="col-md-3 my-1 control-label">Create Coupons</label>
+                                <div class="col-md-9">
+                                                        <div class="form-check-inline my-1">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
+                                                                <label class="custom-control-label" for="customRadio7">Custom</label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-check-inline my-1">
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio8">Standard</label>
+                                                        <div class="form-check-inline my-1">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
+                                                                <label class="custom-control-label" for="customRadio8">Standard</label>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                            </div>
-                       </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label
-                              for="txtNameCard"
-                              class="col-lg-3 col-form-label"
-                              >TakeOut/Dine In</label
-                            >
-                            <div class="col-lg-9">
-                            <select class="form-control form-control-sm">
-                                <option>----- select BOGO -----</option> 
-                                <option>----- select Invoice Discount -----</option>
-                              </select>
-                            </div>
-                          </div>
-                          <!--end form-group-->
-                        </div>
-                        <!--end col-->
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label
-                              for="ddlCreditCardType"
-                              class="col-lg-3 col-form-label"
-                              >Credit Card Type</label
-                            >
-                            <div class="col-lg-9">
-                              <select
-                                id="ddlCreditCardType"
-                                name="ddlCreditCardType"
-                                class="form-control"
-                              >
-                                <option value="">--Please Select--</option>
-                                <option value="AE">American Express</option>
-                                <option value="VI">Visa</option>
-                                <option value="MC">MasterCard</option>
-                                <option value="DI">Discover</option>
-                              </select>
-                            </div>
-                          </div>
-                          <!--end form-group-->
-                        </div>
-                        <!--end col-->
-                      </div>
-                      <!--end row-->
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label
-                              for="txtCreditCardNumber"
-                              class="col-lg-3 col-form-label"
-                              >Credit Card Number</label
-                            >
+                                </div>
+                              </div>
+                              <!-- 2nd -->
+                              <div class="form-group row">
+                                <label
+                                  for="txtFirstNameBilling"
+                                  class="col-lg-3 col-form-label"
+                                  >TakeOut/Dine In </label
+                                >
+                                <div class="col-lg-9">
+                                  <select class="form-control form-control-sm">
+                                    <option>----- select Type -----</option> 
+                                    <option>----- select BOGO -----</option> 
+                                    <option>----- select Invoice Discount -----</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <!-- 3rd -->
+
+                              <div class="form-group row">
+                                  <label
+                                    for="txtFirstNameBilling"
+                                    class="col-lg-3 col-form-label"
+                                    >Select Coupons </label
+                                  >
+                                  <div class="col-lg-9">
+                                  <select class="form-control form-control-sm"> 
+                                    <option>----- Select Coupons -----</option> 
+                                    <option>----- Standard – BOGO on Main Course -----</option> 
+                                    <option>----- Custom – BOGO on Description -----</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <!-- 4th -->
+                              <div class="form-group row">
+                              <label
+                                    for="txtFirstNameBilling"
+                                    class="col-lg-3 col-form-label"
+                                    >Description </label
+                                  >
                             <div class="col-lg-9">
                               <input
-                                id="txtCreditCardNumber"
-                                name="txtCreditCardNumber"
+                                id="txtLastNameShipping"
+                                name="txtLastNameShipping"
                                 type="text"
                                 class="form-control"
                               />
                             </div>
                           </div>
-                          <!--end form-group-->
+                              <!-- 4th -->
+                              <!-- 5th -->
+                              <!-- <div class="form-group row">
+                                  <label
+                                    for="txtFirstNameBilling"
+                                    class="col-lg-3 col-form-label"
+                                    >Business Group </label
+                                  >
+                                  <div class="col-lg-9">
+                                  <select class="form-control form-control-sm">
+                                  <option>----- select cuisine -----</option> 
+                                  <option>----- select cuisine -----</option>
+                                </select>
+                                  </div>
+                              </div> -->
+                              <!-- 5th -->
+                             </div>
+                       
+                            <div class="col-lg-6 hide-srollbar">
+                                <!-- accordian -->
+                          <div class="card">
+                               
+                                  <div class="card-body">
+                                      <div class="accordion" id="accordionExample">
+                                          <div class="card border mb-1 shadow-none">
+                                              <div class="card-header custom-accordion  rounded-0" id="headingOne">
+                                                  <a href="" class="text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Custom Coupons
+                                                  </a>
+                                              </div>
+                                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                  <div class="card-body">
+                                                <div class="table-responsive">
+                                              <table class="table table-bordered mb-0 table-centered">
+                                                  <thead>
+                                                  <tr>
+                                                      <th>Create Coupons</th>
+                                                      <th>TakeOut/Dine In</th>
+                                                      <th>Select Coupons</th>
+                                                      <th>Order Status</th>
+                                                      <th class="text-right">Action</th>
+                                                  </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                  <tr>
+                                                      <td>Custom</td>
+                                                      <td>BOGO</td>
+                                                      <td>Standard – BOGO on Main Course</td>
+                                                      <td><span class="badge badge-soft-success">Approved</span></td>
+                                                      <td class="text-right">
+                                                          <div class="dropdown d-inline-block">
+                                                              <a class="dropdown-toggle arrow-none" id="dLabel11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                                  <i class="las la-ellipsis-v font-20 text-muted"></i>
+                                                              </a>
+                                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel11">
+                                                                  <a class="dropdown-item" href="#">Creat Project</a>
+                                                                  <a class="dropdown-item" href="#">Open Project</a>
+                                                                  <a class="dropdown-item" href="#">Tasks Details</a>
+                                                              </div>
+                                                          </div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>Custom</td>
+                                                      <td>Invoice Discount</td>
+                                                      <td>Custom – BOGO on Description</td>
+                                                      <td><span class="badge badge-soft-success">Approved</span></td>
+                                                      <td class="text-right">
+                                                          <div class="dropdown d-inline-block">
+                                                              <a class="dropdown-toggle arrow-none" id="dLabel11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                                  <i class="las la-ellipsis-v font-20 text-muted"></i>
+                                                              </a>
+                                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel11">
+                                                                  <a class="dropdown-item" href="#">Creat Project</a>
+                                                                  <a class="dropdown-item" href="#">Open Project</a>
+                                                                  <a class="dropdown-item" href="#">Tasks Details</a>
+                                                              </div>
+                                                          </div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>Standard</td>
+                                                      <td>Standard – BOGO on Main Course</td>
+                                                      <td>Standard – BOGO on Main Course </td>
+                                                      <td><span class="badge badge-soft-danger">Rejected</span></td>
+                                                      <td class="text-right">
+                                                          <div class="dropdown d-inline-block">
+                                                              <a class="dropdown-toggle arrow-none" id="dLabel11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                                  <i class="las la-ellipsis-v font-20 text-muted"></i>
+                                                              </a>
+                                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel11">
+                                                                  <a class="dropdown-item" href="#">Creat Project</a>
+                                                                  <a class="dropdown-item" href="#">Open Project</a>
+                                                                  <a class="dropdown-item" href="#">Tasks Details</a>
+                                                              </div>
+                                                          </div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>Custom</td>
+                                                      <td>Custom – BOGO on Description</td>
+                                                      <td>Fries</td>
+                                                      <td><span class="badge badge-soft-success">Approved</span></td>
+                                                      <td class="text-right">
+                                                          <div class="dropdown d-inline-block">
+                                                              <a class="dropdown-toggle arrow-none" id="dLabel11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                                  <i class="las la-ellipsis-v font-20 text-muted"></i>
+                                                              </a>
+                                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel11">
+                                                                  <a class="dropdown-item" href="#">Creat Project</a>
+                                                                  <a class="dropdown-item" href="#">Open Project</a>
+                                                                  <a class="dropdown-item" href="#">Tasks Details</a>
+                                                              </div>
+                                                          </div>
+                                                      </td>
+                                                  </tr>
+                                                  </tbody>
+                                              </table><!--end /table-->
+                                          </div><!--end /tableresponsive-->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          
+                                          <div class="card mb-0 border shadow-none">
+                                              <div class="card-header  rounded-0" id="headingThree">
+                                                  <a href="" class="collapsed text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Invoice Coupons
+                                                  </a>
+                                              </div>
+                                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                  <div class="card-body">
+                                                  <table class="table table-bordered mb-0 table-centered">
+                                                  <thead>
+                                                  <tr>
+                                                      <th>Create Coupons</th>
+                                                      <th>TakeOut/Dine In</th>
+                                                      <th>Select Coupons</th>
+                                                      <th>Order Status</th>
+                                                      <th class="text-right">Action</th>
+                                                  </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                  <tr>
+                                                      <td>Custom</td>
+                                                      <td>BOGO</td>
+                                                      <td>Standard – BOGO on Main Course</td>
+                                                      <td><span class="badge badge-soft-success">Approved</span></td>
+                                                      <td class="text-right">
+                                                          <div class="dropdown d-inline-block">
+                                                              <a class="dropdown-toggle arrow-none" id="dLabel11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                                  <i class="las la-ellipsis-v font-20 text-muted"></i>
+                                                              </a>
+                                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel11">
+                                                                  <a class="dropdown-item" href="#">Creat Project</a>
+                                                                  <a class="dropdown-item" href="#">Open Project</a>
+                                                                  <a class="dropdown-item" href="#">Tasks Details</a>
+                                                              </div>
+                                                          </div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>Custom</td>
+                                                      <td>Invoice Discount</td>
+                                                      <td>Custom – BOGO on Description</td>
+                                                      <td><span class="badge badge-soft-success">Approved</span></td>
+                                                      <td class="text-right">
+                                                          <div class="dropdown d-inline-block">
+                                                              <a class="dropdown-toggle arrow-none" id="dLabel11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                                  <i class="las la-ellipsis-v font-20 text-muted"></i>
+                                                              </a>
+                                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel11">
+                                                                  <a class="dropdown-item" href="#">Creat Project</a>
+                                                                  <a class="dropdown-item" href="#">Open Project</a>
+                                                                  <a class="dropdown-item" href="#">Tasks Details</a>
+                                                              </div>
+                                                          </div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>Standard</td>
+                                                      <td>Standard – BOGO on Main Course</td>
+                                                      <td>Standard – BOGO on Main Course </td>
+                                                      <td><span class="badge badge-soft-danger">Rejected</span></td>
+                                                      <td class="text-right">
+                                                          <div class="dropdown d-inline-block">
+                                                              <a class="dropdown-toggle arrow-none" id="dLabel11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                                  <i class="las la-ellipsis-v font-20 text-muted"></i>
+                                                              </a>
+                                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel11">
+                                                                  <a class="dropdown-item" href="#">Creat Project</a>
+                                                                  <a class="dropdown-item" href="#">Open Project</a>
+                                                                  <a class="dropdown-item" href="#">Tasks Details</a>
+                                                              </div>
+                                                          </div>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>Custom</td>
+                                                      <td>Custom – BOGO on Description</td>
+                                                      <td>Fries</td>
+                                                      <td><span class="badge badge-soft-success">Approved</span></td>
+                                                      <td class="text-right">
+                                                          <div class="dropdown d-inline-block">
+                                                              <a class="dropdown-toggle arrow-none" id="dLabel11" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                                  <i class="las la-ellipsis-v font-20 text-muted"></i>
+                                                              </a>
+                                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel11">
+                                                                  <a class="dropdown-item" href="#">Creat Project</a>
+                                                                  <a class="dropdown-item" href="#">Open Project</a>
+                                                                  <a class="dropdown-item" href="#">Tasks Details</a>
+                                                              </div>
+                                                          </div>
+                                                      </td>
+                                                  </tr>
+                                                  </tbody>
+                                              </table><!--end /table-->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>    
+                                  </div><!--end card-body-->
+                            </div><!--end card-->
+                          <!-- accordian  -->
+                            </div> <!-- end col -->
                         </div>
-                        <!--end col-->
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label
-                              for="txtCardVerificationNumber"
-                              class="col-lg-3 col-form-label"
-                              >Card Verification Number</label
-                            >
-                            <div class="col-lg-9">
-                              <input
-                                id="txtCardVerificationNumber"
-                                name="txtCardVerificationNumber"
-                                type="text"
-                                class="form-control"
-                              />
-                            </div>
-                          </div>
-                          <!--end form-group-->
-                        </div>
-                        <!--end col-->
                       </div>
-                      <!--end row-->
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label
-                              for="txtExpirationDate"
-                              class="col-lg-3 col-form-label"
-                              >Predefined Packages </label
-                            >
-                            <div class="col-lg-9">
-                            <select
-                                id="ddlCreditCardType"
-                                name="ddlCreditCardType"
-                                class="form-control"
-                              >
-                                <option value="">--Please Select--</option>
-                                <option value="AE">3 Coupons of BOGO On Main Course</option>
-                                <option value="VI">2 Coupons of Discount 20%</option>
-                              </select>
-                            </div>
-                          </div>
-                          <!--end form-group-->
-                        </div>
-                        <!--end col-->
-                      </div>
-                      <!--end row-->
                     </fieldset>
                     <!--end fieldset-->
 

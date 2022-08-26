@@ -15,7 +15,7 @@
                <div class="page-title-box">
                   <div class="row">
                      <div class="col">
-                        <h4 class="page-title">Add Advertising</h4>
+                        <h4 class="page-title">Merchant Form</h4>
                      </div>
                      <!--end col-->
                      <!--end col-->  
@@ -31,30 +31,38 @@
          <div class="row">
             <div class="col-lg-9">
                <div class="card">
-                  <div class="card-header">
-                     <div class="row align-items-center">
-                        <div class="col">
-                           <h4 class="card-title">Advertising Detail</h4>
-                        </div>
+                  <!-- <div class="card-header"> -->
+                     <!-- <div class="row align-items-center"> -->
+                        <!-- <div class="col"> -->
+                           <!-- <h4 class="card-title">Business Name</h4> -->
+                        <!-- </div> -->
                         <!--end col-->
                         <!--end col-->
-                     </div>
+                     <!-- </div> -->
                      <!--end row-->                                  
-                  </div>
+                  <!-- </div> -->
                   <!--end card-header-->
                   <div class="card-body">
                      <form>
                         <div class="form-row">
-                           <div class="col-md-6 mb-3">
-                              <label for="validationServer01">Advertising Name</label>
+                           <div class="col-md-12 mb-3">
+                              <label for="validationServer01">Business Name</label>
                               <!-- is-valid -->
-                              <input type="text" class="form-control " id="validationServer01" placeholder="Advertising Name" value="Advertising Name" required="">
+                              <input type="text" class="form-control " id="validationServer01" placeholder="Business Name" value="Business Name" required="">
                               <!-- <div class="valid-feedback">
                                  Looks good!
                                  </div> -->
                            </div>
                            <div class="col-md-6 mb-3">
-                              <label for="validationServer01">Merchant Name </label>
+                              <label for="validationServer01">First Name </label>
+                              <!-- is-valid -->
+                              <input type="text" class="form-control " id="validationServer01" placeholder="Advertising Code" value="Advertising Code" required="">
+                              <!-- <div class="valid-feedback">
+                                 Looks good!
+                                 </div> -->
+                           </div>
+                           <div class="col-md-6 mb-3">
+                              <label for="validationServer01">Last Name </label>
                               <!-- is-valid -->
                               <input type="text" class="form-control " id="validationServer01" placeholder="Advertising Code" value="Advertising Code" required="">
                               <!-- <div class="valid-feedback">
@@ -65,37 +73,81 @@
                       
                         <div class="form-row">
                            <div class="col-md-6 mb-3">
-                              <label for="validationServer01">Description </label>
+                              <label for="validationServer01">Email </label>
                               <!-- is-valid -->
-                              <textarea type="text" class="form-control " id="validationServer01" placeholder="Description" value="Description" required=""></textarea>
+                              <input type="email" class="form-control " id="validationServer01" placeholder="Email Address" value="Email Address" required=""/>
                               <!-- <div class="valid-feedback">
                                  Looks good!
                                  </div> -->
                            </div>
                            <div class="col-md-6 mb-3">
-                              <label for="validationServer01">Amount</label>
-                              <input type="text" class="form-control " id="validationServer01" placeholder="Amount" value="Amount" required="">
+                              <label for="validationServer01">City</label>
+                              <input type="text" class="form-control " id="validationServer01" placeholder="City" value="City" required="">
+                              <div class="valid-feedback">
+                                 Looks good!
+                              </div>
+                           </div>
+                           <div class="col-md-6 mb-3">
+                              <label for="validationServer01">Contact Number</label>
+                              <input type="text" class="form-control " id="validationServer01" placeholder="Contact Number" value="Contact Number" required="">
                               <div class="valid-feedback">
                                  Looks good!
                               </div>
                            </div>
                         </div>
                        
-                        <div class="form-row">
+                        <!-- <div class="form-row">
                            <div class="col-md-6 mb-3">
                                 <div class="custom-control custom-switch">
+                                  
+                                    <label class="custom-control-label" for="customSwitch1">Select Business Type</label>
                                     <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1">Approval</label>
                                  </div>
                            </div>
-                        </div>
+                        </div> -->
+                        <div class="form-group mb-0 row">
+                                                <label class="col-md-3 my-1 control-label">Select Business Type</label>
+                                                <div class="col-md-9">
+                                                    <div class="form-check-inline my-1">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio7">Food & Drink</label>
+                                                        </div>
+                                                    </div>
+                                                     <div class="form-check-inline my-1">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio8">Beauty & Fitness</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-check-inline my-1">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio8">Attractions & Leisure</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-check-inline my-1">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio8">Fashion & Retail</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-check-inline my-1">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio8">Everyday Services</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                            </div>
                      </form>
                   </div>
                   <!--end card-body--> 
                </div>
                <!--end card--> 
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <form>
                     <div class="form-row">
                             <div class="col-md-12 ">
@@ -107,9 +159,9 @@
                             </div>
                         </div>
                 </form>
-            </div>
+            </div> -->
             <!--end col-->               
-         </div>
+         <!-- </div> -->
          <!--end row-->
       </div>
       <!-- container -->

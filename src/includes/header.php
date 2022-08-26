@@ -25,5 +25,6 @@
         <link href="assets/plugins/dropify/css/dropify.min.css" rel="stylesheet">
         <link type="text/css" href="assets/plugins/x-editable/css/bootstrap-editable.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/plugins/jquery-steps/jquery.steps.css">
+       
     </head>
     <body class="light-sidenav">
