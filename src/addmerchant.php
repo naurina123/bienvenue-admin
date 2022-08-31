@@ -19,7 +19,7 @@
             -ms-overflow-style: none !important;
             }
         </style>
-<div class="page-wrapper">
+<div class="page-wrapper"> 
    <!-- Top Bar Start -->
    <?php include('includes/topbar.php'); ?>
    <!-- Top Bar End -->
