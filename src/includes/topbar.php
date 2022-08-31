@@ -128,7 +128,7 @@
                         </li> 
                         <li class="creat-btn">
                             <div class="nav-link">
-                                <a class=" btn btn-sm btn-soft-warning" href="#" role="button"><i class="fas fa-plus mr-2"></i>New Task</a>
+                                <a class=" btn btn-sm btn-soft-warning" href="addmerchant.php" role="button"><i class="fas fa-plus mr-2"></i>Add Merchant</a>
                             </div>                                
                         </li>                           
                     </ul>
