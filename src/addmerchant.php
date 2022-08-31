@@ -72,7 +72,7 @@
                             <label
                               for="txtLastNameBilling"
                               class="col-lg-3 col-form-label"
-                              >Business Branch </label
+                              >Business Branch</label
                             >
                             <div class="col-lg-9">
                               <input
