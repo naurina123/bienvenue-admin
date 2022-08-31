@@ -1,7 +1,7 @@
 <div class="left-sidenav">
             <!-- LOGO -->
             <div class="brand">
-                <a href="dashboard/crm-index.html" class="logo">
+                <a href="index.php" class="logo">
                     <span>
                         <img src="assets/images/bienvenue-logo.svg" alt="logo-small" class="logo-sm" style="height:50px">
                     </span>
