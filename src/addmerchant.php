@@ -357,64 +357,65 @@
                                 <div class="col-md-9">
                                                         <div class="form-check-inline my-1">
                                                             <div class="custom-control custom-radio">
-                                                                <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadio7">Custom</label>
+                                                                <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input"  value="custom">
+                                                                <label class="custom-control-label" for="customRadio7" >Custom</label>
                                                             </div>
                                                         </div>
                                                         <div class="form-check-inline my-1">
                                                             <div class="custom-control custom-radio">
-                                                                <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input">
+                                                                <input type="radio" id="customRadio8" name="customRadio" class="custom-control-input"  value="standard">
                                                                 <label class="custom-control-label" for="customRadio8">Standard</label>
                                                             </div>
                                                         </div>
                                 </div>
                               </div>
                               <!-- 2nd -->
-                              <div class="form-group row">
+                              <div class="form-group row d-none" id="dinein">
                                 <label
                                   for="txtFirstNameBilling"
                                   class="col-lg-3 col-form-label"
                                   >TakeOut/Dine In </label
                                 >
                                 <div class="col-lg-9">
-                                  <select class="form-control form-control-sm">
-                                    <option>----- select Type -----</option> 
-                                    <option>----- select BOGO -----</option> 
-                                    <option>----- select Invoice Discount -----</option>
+                                  <select class="form-control form-control-sm"  id="takeout">
+                                    <option value="">----- select Type -----</option> 
+                                    <option value="BOGO">----- select BOGO -----</option> 
+                                    <option value="Invoice">----- select Invoice Discount -----</option>
                                   </select>
                                 </div>
                               </div>
                               <!-- 3rd -->
 
-                              <div class="form-group row">
+                               <div class="form-group row d-none" id="maincourse" >
                                   <label
                                     for="txtFirstNameBilling"
                                     class="col-lg-3 col-form-label"
                                     >Select Coupons </label
                                   >
                                   <div class="col-lg-9">
-                                  <select class="form-control form-control-sm"> 
-                                    <option>----- Select Coupons -----</option> 
-                                    <option>----- Standard – BOGO on Main Course -----</option> 
-                                    <option>----- Custom – BOGO on Description -----</option>
+                                  <select class="form-control form-control-sm" id="selectcoupons" > 
+                                    <option value="coupons">----- Select Coupons -----</option> 
+                                    <option value="Course">----- Standard – BOGO on Main Course -----</option> 
+                                    <option value="description">----- Custom – BOGO on Description -----</option>
                                   </select>
                                 </div>
                               </div>
                               <!-- 4th -->
-                              <div class="form-group row">
-                              <label
+                               <div class="form-group row d-none" id="desc">
+                               <label
                                     for="txtFirstNameBilling"
                                     class="col-lg-3 col-form-label"
                                     >Description </label
                                   >
-                            <div class="col-lg-9">
-                              <input
-                                id="txtLastNameShipping"
-                                name="txtLastNameShipping"
-                                type="text"
-                                class="form-control"
-                              />
-                            </div>
+                                <div class="col-lg-9">
+                                <input
+                                  id="description" 
+                                  name="txtLastNameShipping"
+                                  type="text"
+                                  class="form-control"
+                                 
+                                />
+                              </div>
                           </div>
                               <!-- 4th -->
                               <!-- 5th -->
@@ -674,4 +675,36 @@
    </div>
    <!-- end page content -->
 </div>
+
 <?php include('includes/scripts.php'); ?>
+<script>
+  $(document).on('click','input[name="customRadio"]',function() {
+    if($(this).is(":checked")) {
+        var radiobutton = $(this).val();
+        if(radiobutton == "custom") {
+          $("#dinein").removeClass('d-none');
+        }else{
+          $("#dinein").addClass('d-none');
+          $("#maincourse").addClass('d-none');
+          $('#takeout option[value=""]').attr('selected',true);
+        }
+    }      
+});
+$(document).on('click','#takeout',function() {
+  let selected = $(this).val();
+  if(selected=='BOGO'){
+    $("#maincourse").removeClass('d-none');
+  }else{
+    $("#maincourse").addClass('d-none');
+  }
+});
+$(document).on('click','#selectcoupons',function() {
+  let selected = $(this).val();
+  if(selected=='description'){
+    $("#desc").removeClass('d-none');
+    
+  }else{
+    $("#desc").addClass('d-none');
+  }
+});
+</script>
